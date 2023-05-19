@@ -15,7 +15,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.MapGet("/hello", () => "Hello Masum");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
