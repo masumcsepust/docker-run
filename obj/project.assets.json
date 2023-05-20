@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "SharedAssembly/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SharedAssembly.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedAssembly.dll": {}
+        }
       }
     }
   },
@@ -216,10 +226,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "SharedAssembly/1.0.0": {
+      "type": "project",
+      "path": "../SharedAssembly/SharedAssembly.csproj",
+      "msbuildProject": "../SharedAssembly/SharedAssembly.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "SharedAssembly >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -249,7 +265,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\DockerBuild\\SharedAssembly\\SharedAssembly.csproj": {
+              "projectPath": "D:\\Projects\\DockerBuild\\SharedAssembly\\SharedAssembly.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

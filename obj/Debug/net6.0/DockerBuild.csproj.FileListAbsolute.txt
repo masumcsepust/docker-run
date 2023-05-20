@@ -30,3 +30,5 @@ D:\Projects\DockerBuild\DockerBuild\obj\Debug\net6.0\refint\DockerBuild.dll
 D:\Projects\DockerBuild\DockerBuild\obj\Debug\net6.0\DockerBuild.pdb
 D:\Projects\DockerBuild\DockerBuild\obj\Debug\net6.0\DockerBuild.genruntimeconfig.cache
 D:\Projects\DockerBuild\DockerBuild\obj\Debug\net6.0\ref\DockerBuild.dll
+D:\Projects\DockerBuild\DockerBuild\bin\Debug\net6.0\SharedAssembly.dll
+D:\Projects\DockerBuild\DockerBuild\bin\Debug\net6.0\SharedAssembly.pdb
