@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using SharedAssembly;
 
 namespace DockerBuild.Controllers
 {
@@ -6,10 +7,7 @@ namespace DockerBuild.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-        "Hot", "Sweltering", "Scorching"
-    };
+   
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -25,7 +23,7 @@ namespace DockerBuild.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Class1.Summaries[Random.Shared.Next(Class1.Summaries.Length)]
             })
             .ToArray();
         }
